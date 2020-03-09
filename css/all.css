@@ -1,0 +1,155 @@
+body{
+    margin: 0 auto;
+    width: 800px;
+    color: #221f1f;
+    font: 12px/18px Verdana, sans-serif;
+}
+.heder-wraper{
+    background: white;
+}
+.heder{
+    height: 144px;
+}
+.logo{
+    background: url(../images/logo1.png)no-repeat;
+    width: 800px;
+    height: 144px;
+    display: block;
+}
+    /*Навигация*/
+    
+.navigation{
+    background: url(../images/navigation.png)no-repeat;
+    width: 800px;
+    height: 42px;
+    overflow: hidden;
+}
+.navigation ul{
+    padding-left: 44px;
+}
+.navigation ul li{
+    float: left;
+    margin: auto;
+    font-size: 14px;
+    padding: 15px 29px 15px 0;
+}
+.navigation ul li a{
+    color: #fdf8ed;
+    text-decoration: none;
+}
+.nav{
+    color: #ffd54e;
+}
+.nav:hover{
+    text-decoration: underline;
+    color: #ffd54e;
+}
+.navigation ul li a:hover{
+    text-decoration: underline;
+}
+    /*Контент*/
+.container{
+    height: 1228px;
+    padding-left: 44px;
+}
+.data{
+    width: 401px;
+    float: left;
+}
+.data h1{
+    color: #734690;
+    font-size: 20px;
+    padding: 36px 0 18px 0;
+}
+.spase{
+    padding-top: 18px;
+}
+.subtitle{
+    font-size: 12px;
+    font-weight: bold;
+    color: #734690;
+    padding-top: 29px;
+    padding-bottom: 13px;
+    display: block;
+}
+.text2 p{
+    padding-bottom: 18px;
+}
+.non-spase{
+    margin-bottom: -18px;
+}
+.text3 p:not([type="non-spase"]){
+    padding-bottom: 18px;
+    /*как правильно задавать "не" в этом сдучае?*/
+}
+.text4 p{
+    padding-bottom: 14px;  
+}
+address{
+    color: #6bc1ce;
+    padding-top: 19px;
+}
+.mail{
+    color: #6bc1ce;
+    text-decoration: none;
+}
+    /*Сайтбар*/
+.sidebr{
+    height: 342px;
+    background: url(../images/content-logo.png);
+    margin-top: 36px;
+    width: 270px;
+    float: right;
+}
+.click{
+    float: right;
+}
+.click a{
+    display: block;
+    font-size: 12px;
+    color: #6bc1ce;
+    padding: 226px 98px 0 29px;
+    
+}
+    /*Футер*/
+
+    /*footer{
+    background: url(../images/footerline.png)repeat-x;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 62px;*/
+
+/*Как можно было сделать лучше подчеркивание это перед футером? */
+
+    /*footer{
+    background: url(../images/footerline.png)repeat-x;
+    width: 800px;
+    height: 5px;
+    min-height: calc(100vh - 62px);*/
+
+
+footer::before{
+    content: "";
+    display: block;
+    background: url(../images/footerline.png);
+    margin-bottom: 12px;
+    margin-top: -28px;
+    height: 90px;
+}
+.footer-line{
+    padding-left: 44px;
+}
+.footer-line p{
+    font-size: 10px;
+    color: #231f20;
+}
+.footer-line p:nth-of-type(2){
+    font-size: 8.5px;
+    color: #231f20;
+}
+.sidebar{
+    width: 263px;
+    float: right;
+}

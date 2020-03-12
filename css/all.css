@@ -80,7 +80,7 @@ body{
 }
 .text3 p:not([type="non-spase"]){
     padding-bottom: 18px;
-    /*как правильно задавать "не" в этом сдучае?*/
+    
 }
 .text4 p{
     padding-bottom: 14px;  
@@ -112,23 +112,6 @@ address{
     
 }
     /*Футер*/
-
-    /*footer{
-    background: url(../images/footerline.png)repeat-x;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 62px;*/
-
-/*Как можно было сделать лучше подчеркивание это перед футером? */
-
-    /*footer{
-    background: url(../images/footerline.png)repeat-x;
-    width: 800px;
-    height: 5px;
-    min-height: calc(100vh - 62px);*/
-
 
 footer::before{
     content: "";
